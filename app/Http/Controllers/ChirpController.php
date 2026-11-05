@@ -8,12 +8,10 @@ class ChirpController extends Controller
 {
     public function index()
     {
-        public function index()
-{
-    $chirps = [
-        [
-            'author' => 'Jane Doe',
-            'message' => 'Just deployed my first Laravel app! 🚀',
+        $chirps = [
+            [
+                'author' => 'Jane Doe',
+                'message' => 'Just deployed my first Laravel app! 🚀',
             'time' => '5 minutes ago'
         ],
         [
@@ -31,4 +29,4 @@ class ChirpController extends Controller
     return view('home', ['chirps' => $chirps]);
 }
     }
-}
+
