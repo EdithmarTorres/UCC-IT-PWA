@@ -5,7 +5,7 @@
     <div class="max-w-2xl mx-auto">
         <section class="home-section">
 
-            <h1 id = "specialh1">Welcome to the UCC IT Department</h1>
+            <h1 id = "specialh2">Welcome to the UCC IT Department</h1>
 
             <p id = "specialp">
                 Your central hub for Information Technology

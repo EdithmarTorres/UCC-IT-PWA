@@ -1,5 +1,5 @@
 <x-layout>
-    <h1 id = "specialh1">Courses</h1>
+    <h2 id = "specialh2">Courses</h2>
 
     <p id = "specialp">Explore courses part of the Information Technology programme.</p>
 
