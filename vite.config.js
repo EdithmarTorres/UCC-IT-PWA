@@ -6,8 +6,8 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
-            refresh: true,
+            //;ADDED LINK TO FIREBASE.JS FILE TO VITE CONFIGURATION
+            input: ['resources/css/app.css', 'resources/js/app.js', 'resources/js/courses.js'],            refresh: true,
             fonts: [
                 bunny('Instrument Sans', {
                     weights: [400, 500, 600],

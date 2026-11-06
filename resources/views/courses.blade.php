@@ -5,5 +5,6 @@
 
     <div id="course-list">
         Loading courses...
+        @vite(['resources/js/courses.js'])
     </div>
 </x-layout>
