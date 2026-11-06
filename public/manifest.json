@@ -1,11 +1,11 @@
 {
-    "name": "Laravel PWA",
-    "short_name": "LPT",
+    "name": "UCC IT Department Progressive Web Application 20227025",
+    "short_name": "UCC IT",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "description": "A Progressive Web Application for the University of the Commonwealth Caribbean's IT Department developed by Edithmar Torres Sanchez",
+    "theme_color": "#1b17ff",
     "start_url": "/",
-    "background_color": "#000000",
-    "description": "A Progressive Web Application setup for Laravel projects.",
-    "display": "fullscreen",
-    "theme_color": "#000000",
     "icons": [
         {
             "src": "logo.png",
