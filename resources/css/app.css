@@ -28,86 +28,127 @@ AND CUSTOMIZE IT TO FIT MY NEEDS. */
 
 /*MY CSS STYLING */
 
+#specialh2 {
+    width: 100%;
+    box-sizing: border-box;
+    color:#1b17ff;
+    font-size: xx-large;
+    font-weight: bold;
+    margin:0;
+    padding: 25px;
+    text-align: center;
+    animation: fadeUp 3.5s ease-out;
+}
+
+#specialp {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: black;
+    font-weight: semi-bold;
+    padding: 20px 20px 10px 10px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 2;
+        transform: translateY(0);
+    }
+}
+
 /* FACULTY CONTACT CARDS */
 .staff-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 40px 20px;
 }
 
 .staff-card {
-  flex: 1 1 260px;
-  max-width: 320px;
+  flex: 1 1 280px;
+  max-width: 340px;
+  background: #fff;
+  color: #222;
+  border: 1px solid #1b17ff;
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
+  display: flex;
+  flex-direction: column;
 }
 
 .staff-card img,
 .staff-initials {
   width: 100%;
-  height: 220px;
+  height: 260px;
   object-fit: cover;
+  object-position: top;
+  border-bottom: 1.5px solid #ffee05;
+  flex-shrink: 0;
 }
 
-/* shown when a person has no photo */
 .staff-initials {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 56px;
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .staff-card h2 {
-  margin: 16px 0 4px;
+  margin: 24px 16px 24px;
   font-size: 20px;
   font-weight: bold;
 }
 
-.staff-card p {
-  margin: 4px 16px;
+.staff-card .staff-title {
+  margin: 16px 16px 20px;
+  padding: 14px 14px;
   font-size: 15px;
+  color: #555;
+}
+
+.staff-card p {
+  margin: 8px 16px;
+  font-size: 15px;
+  font-style: bold;
+  word-break: break-word;
 }
 
 .staff-buttons {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
-  margin-top: 16px;
+  margin-top: auto;
+  padding-top: 25px;
 }
 
 .staff-buttons a {
-  padding: 10px 22px;
+  padding: 10px 24px;
   border-radius: 10px;
   font-weight: bold;
   text-decoration: none;
-}
-
-.staff-buttons a:hover { opacity: 0.9; }
-
-.staff-card:nth-child(odd) {
+  color: #fbfbf7;
   background: #1b17ff;
-  color: #fff;
-}
-.staff-card:nth-child(odd) .staff-buttons a {
-  background: #ffee05;
-  color: #000;
 }
 
-.staff-card:nth-child(even) {
-  background: #ffee05;
-  color: #000;
-}
-.staff-card:nth-child(even) .staff-buttons a {
+.staff-buttons a:last-child {
   background: #1b17ff;
-  color: #fff;
+  color: #fbfbf7;
 }
 
+.staff-buttons a:hover {
+  opacity: 0.7;
+}
 
 

@@ -11,7 +11,7 @@ class StaffSeeder extends Seeder
     {
         $people = [
             [
-                'name'  => 'Dr. Syed Sajjad Hussain Rizvi',
+                'name'  => 'Dr. Sajjad Hussain Rizvi',
                 'title' => 'Lecturer',
                 'phone' => '+92-322-2996265',
                 'email' => 'srizvi@faculty.ucc.edu.jm',
@@ -44,6 +44,13 @@ class StaffSeeder extends Seeder
                 'phone' => '+1-876-906-3000',
                 'email' => 'itlecturer@ucc.edu.jm',
                 'photo' => 'lecturer_mr_williams.png',
+            ],
+            [
+                'name'  => 'Ms. Edithmar Torres',
+                'title' => 'Student',
+                'phone' => '+1-234-567-8910',
+                'email' => 'student@ucc.edu.jm',
+                'photo' => 'edithmar_torres.png',
             ]
         ];
 

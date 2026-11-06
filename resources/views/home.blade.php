@@ -5,9 +5,9 @@
     <div class="max-w-2xl mx-auto">
         <section class="home-section">
 
-            <h1>Welcome to the UCC IT Department</h1>
+            <h1 id = "specialh1">Welcome to the UCC IT Department</h1>
 
-            <p>
+            <p id = "specialp">
                 Your central hub for Information Technology
                 department information, academic resources
                 and student updates.

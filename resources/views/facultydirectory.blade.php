@@ -1,6 +1,6 @@
 <x-layout>
-    <h1>Faculty and Staff Directory</h1>
-    <p>Meet the faculty and staff of the UCC IT Department.</p>
+    <h2 id = "specialh2">Faculty and Staff Directory </h2>
+    <p id = "specialp">Meet the faculty and staff of the UCC IT Department.</p>
 
     <div class="staff-grid">
         @foreach ($staff as $member)
@@ -13,13 +13,11 @@
                 @endif
 
                 <h2>{{ $member->name }}</h2>
-                <p>{{ $member->title }}</p>
-                <p>📞 {{ $member->phone }}</p>
-                <p>✉️ {{ $member->email }}</p>
-
+                <p class="staff-title">{{ $member->title }}</p>
+                
                 <div class="staff-buttons">
-                    <a href="tel:{{ preg_replace('/[^0-9+]/', '', $member->phone) }}">Call</a>
-                    <a href="mailto:{{ $member->email }}">Email</a>
+                    <a href="tel:{{ preg_replace('/[^0-9+]/', '', $member->phone) }}">📞 Call</a>
+                    <a href="mailto:{{ $member->email }}">✉️ Email</a>
                 </div>
 
             </div>

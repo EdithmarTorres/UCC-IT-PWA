@@ -1,6 +1,6 @@
 <x-layout>
-    <h1>Admissions</h1>
+    <h2 id = "specialh2">Admissions </h2>
 
-    <p>Learn more about admission requirements for the Information Technology programme.</p>
+    <p id = "specialp">Learn more about admission requirements for the Information Technology programme.</p>
 
 </x-layout>
