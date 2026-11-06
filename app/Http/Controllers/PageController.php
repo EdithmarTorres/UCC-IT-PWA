@@ -1,6 +1,7 @@
 <?php 
 
 namespace App\Http\Controllers;
+use App\Models\Staff;
 
 class PageController extends Controller
 {
@@ -13,7 +14,9 @@ class PageController extends Controller
     // VIEW FOR UCC FACULTY/STAFF DIRECTORY
     public function directory()
     {
-        return view('facultydirectory');
+        return view('facultydirectory', [
+            'staff' => Staff::orderBy('name')->get(),
+        ]);
     }
 
     // VIEW FOR COURSES PAGE

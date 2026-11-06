@@ -2,6 +2,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StaffController;
 
 //Using the the controller called PagedController to handle the routing of the pages in the app
 use App\Http\Controllers\PageController;
@@ -20,3 +21,4 @@ Route::get('/admissions', [PageController::class, 'admissions'])->name('admissio
 
 // ROUTING TO THE UCC SOCIAL MEDIA PAGE
 Route::get('/social-media', [PageController::class, 'socialMedia'])->name('social-media');
+

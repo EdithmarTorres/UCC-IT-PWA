@@ -1,3 +1,7 @@
+/* REALLY LIKED THE FONT AND LOOK OF THE CHIRPER APP TUTORIAL
+SO I DECIDED TO USE IT AS A TEMPLATE FOR MY UCC IT DEPARTMENT WEBSITE
+AND CUSTOMIZE IT TO FIT MY NEEDS. */
+
 @import 'tailwindcss';
 
 /* stylelint-disable at-rule-no-unknown */
@@ -9,7 +13,7 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 
-    --animate-fade-out: fade-out 4s ease-in-out forwards;
+    --animate-fade-out: fades-out 4s ease-in-out forwards;
 
     @keyframes fade-out {
         0%, 70% {
@@ -21,3 +25,89 @@
         }
     }
 }
+
+/*MY CSS STYLING */
+
+/* FACULTY CONTACT CARDS */
+.staff-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 20px;
+}
+
+.staff-card {
+  flex: 1 1 260px;
+  max-width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.staff-card img,
+.staff-initials {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* shown when a person has no photo */
+.staff-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.staff-card h2 {
+  margin: 16px 0 4px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.staff-card p {
+  margin: 4px 16px;
+  font-size: 15px;
+}
+
+.staff-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.staff-buttons a {
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.staff-buttons a:hover { opacity: 0.9; }
+
+.staff-card:nth-child(odd) {
+  background: #1b17ff;
+  color: #fff;
+}
+.staff-card:nth-child(odd) .staff-buttons a {
+  background: #ffee05;
+  color: #000;
+}
+
+.staff-card:nth-child(even) {
+  background: #ffee05;
+  color: #000;
+}
+.staff-card:nth-child(even) .staff-buttons a {
+  background: #1b17ff;
+  color: #fff;
+}
+
+
+
