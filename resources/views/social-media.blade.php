@@ -1,5 +1,8 @@
 <x-layout>
-
+    <!-- SOCIAL MEDIA DISPLAY PAGE FOR UCC IT PWA WITH BUILT-IN VIEWING OF UCC SOCIAL MEDIA POSTS -->
+    <x-slot:title>
+        Social Media | UCC IT Department
+    </x-slot:title>
     <section class="social-page">
 
         <!-- PAGE INTRODUCTION -->
@@ -35,7 +38,6 @@
             </a>
 
         </div>
-
 
         <!-- FACEBOOK SECTION -->
         <section class="social-feed" id="facebook-feed">
@@ -204,12 +206,8 @@
                 </blockquote>
 
             </div>
-
         </section>
-
-
     </section>
-
 
     <!-- INSTAGRAM EMBED SCRIPT -->
     <script async src="https://www.instagram.com/embed.js"></script>

@@ -29,6 +29,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
 
+    <!-- VITE LINKS TO CSS AND JS FILES -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -44,7 +45,7 @@
             </a>
         </div>
 
-        <!-- DESKTOP NAVIGATION -->
+        <!-- DESKTOP NAVIGATION GHOST BUTTONS, INSPIRED BY CHIRPER TUTORIAL -->
         <div class="navbar-end gap-1 desktop-nav">
             <a href="{{ route('home') }}" class="btn btn-ghost btn-sm">Home</a>
             <a href="{{ route('facultydirectory') }}" class="btn btn-ghost btn-sm">Faculty/Staff Directory</a>
@@ -109,8 +110,7 @@
 
     </a>
 
-
-    <!-- PWA INSTALL BUTTON -->
+    <!-- PWA INSTALL BUTTON...CIRCULAR STYLING -->
     <button class="pwa-install-btn" id="pwa-install-button" title="Install App">
         <img src="{{ asset('gallery/logo.png') }}" alt="UCC IT PWA Logo">
     </button>

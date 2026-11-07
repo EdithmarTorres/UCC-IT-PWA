@@ -1,9 +1,10 @@
 <x-layout>
+    <!-- INDEX PAGE OR HOME PAGE PROVIDING BACKGROUND ON UCC AS AN INSTITUTION AND PURPOSE OF SITE -->
     <x-slot:title>
         Welcome | UCC IT Department
     </x-slot:title>
 
-    <!-- INTRO + HEADING STAY IN THE NARROWER BOX SO THE TEXT IS EASY TO READ -->
+    <!-- INTRODUCTION WELCOMES THE USER TO THE SITE -->
     <div class="max-w-6xl mx-auto px-4 py-6">
 
         <section class="home-section text-center mb-5">
@@ -17,7 +18,7 @@
             </p>
         </section>
 
-    <!-- BIG BANNER THAT GOES ALL ACROSS THE PAGE -->
+    <!-- BIG BANNER THAT GOES ALL ACROSS THE PAGE DETAILING PAGE FEATURES-->
     <section class="hero">
 
         <img class="hero-logo" src="{{ asset('gallery/logo.png') }}" alt="UCC Info Tech Logo">
@@ -36,6 +37,7 @@
 
     </section>
 
+    <!-- BACKGROUND INFO ON  UCC AS AN INSTITUTION, ACCREDITATION-->
         <section class="headings mt-5">
             <div>
                 <h2 id="specialh2">Our Institution</h2>
@@ -44,7 +46,6 @@
 
     </div>
 
-    <!-- PHOTO + TEXT SECTION IS NOW OUTSIDE THE NARROW BOX SO IT CAN BE WIDER ON LAPTOP/PC -->
     <section class="photostyle">
         <div class="photo-col">
             <img src="gallery/ucc_building.jpg" alt="UCC Campus Building">

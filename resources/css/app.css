@@ -13,7 +13,7 @@ AND CUSTOMIZE IT TO FIT MY NEEDS. */
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 
-    --animate-fade-out: fades-out 4s ease-in-out forwards;
+    --animate-fade-out: fade-out 4s ease-in-out forwards;
 
     @keyframes fade-out {
         0%, 70% {
@@ -26,15 +26,23 @@ AND CUSTOMIZE IT TO FIT MY NEEDS. */
     }
 }
 
-/*MY CSS STYLING */
 
+/* MY CUSTOM CSS STYLES */
+
+/* STOPS THE PAGE FROM SCROLLING SIDEWAYS (NEEDED FOR THE FULL WIDTH HERO) */
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* MAIN PAGE HEADINGS AND INTRO TEXT */
 #specialh2 {
     width: 100%;
     box-sizing: border-box;
-    color:#1b17ff;
+    color: #1b17ff;
     font-size: xx-large;
     font-weight: bold;
-    margin:0;
+    margin: 0;
     padding: 25px;
     text-align: center;
     animation: fadeUp 3.5s ease-out;
@@ -45,12 +53,12 @@ AND CUSTOMIZE IT TO FIT MY NEEDS. */
     line-height: 1.5;
     text-align: center;
     color: black;
-    font-weight: semi-bold;
+    font-weight: 400;
     padding: 20px 20px 10px 10px;
 }
 
 p {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 @keyframes fadeUp {
@@ -59,104 +67,101 @@ p {
         transform: translateY(30px);
     }
     to {
-        opacity: 2;
+        opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* FACULTY CONTACT CARDS */
+
+/* FACULTY/STAFF DIRECTORY PAGE -> FACULTY CONTACT CARDS*/
+
 .staff-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 28px;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .staff-card {
-  flex: 1 1 280px;
-  max-width: 340px;
-  background: #fff;
-  color: #222;
-  border: 1px solid #1b17ff;
-  border-radius: 16px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  padding-bottom: 28px;
-  display: flex;
-  flex-direction: column;
+    flex: 1 1 280px;
+    max-width: 340px;
+    background: #fff;
+    color: #222;
+    border: 1px solid #1b17ff;
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 28px;
+    display: flex;
+    flex-direction: column;
 }
 
 .staff-card img,
 .staff-initials {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  object-position: top;
-  border-bottom: 1.5px solid #ffee05;
-  flex-shrink: 0;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 1.5px solid #ffee05;
+    flex-shrink: 0;
 }
 
 .staff-initials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 56px;
-  font-weight: bold;
-  background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .staff-card h2 {
-  margin: 24px 16px 24px;
-  font-size: 20px;
-  font-weight: bold;
+    margin: 24px 16px 24px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .staff-card .staff-title {
-  margin: 16px 16px 20px;
-  padding: 14px 14px;
-  font-size: 15px;
-  color: #555;
+    margin: 16px 16px 20px;
+    padding: 14px 14px;
+    font-size: 15px;
+    color: #555;
 }
 
 .staff-card p {
-  margin: 8px 16px;
-  font-size: 15px;
-  font-style: bold;
-  word-break: break-word;
+    margin: 8px 16px;
+    font-size: 15px;
+    font-weight: bold;
+    word-break: break-word;
 }
 
 .staff-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: auto;
-  padding-top: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: auto;
+    padding-top: 25px;
 }
 
 .staff-buttons a {
-  padding: 10px 24px;
-  border-radius: 10px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fbfbf7;
-  background: #1b17ff;
-}
-
-.staff-buttons a:last-child {
-  background: #1b17ff;
-  color: #fbfbf7;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fbfbf7;
+    background: #1b17ff;
 }
 
 .staff-buttons a:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
+/* COURSES PAGE -> COURSE CARDS */
 
-/* STYLING FOR COURSE CARDS */
 #course-list {
     display: flex;
     flex-wrap: wrap;
@@ -180,7 +185,7 @@ p {
     transition: transform 0.2s;
 }
 
-/*YELLOW BAR STYLE...TO LOOK LIKE A NOTEBOOK IN A SENSE */
+/* YELLOW BAR STYLE...TO LOOK LIKE A NOTEBOOK IN A SENSE */
 .course-card::before {
     content: "";
     position: absolute;
@@ -206,7 +211,7 @@ p {
     color: #181818;
 }
 
-/* BLUE PILLS ARE SIDE BY SIDE OR THEY WRAP WHEN NO ROOM (I.E.SMALLER DEVICES) */
+/* BLUE PILLS ARE SIDE BY SIDE OR THEY WRAP WHEN NO ROOM (I.E. SMALLER DEVICES) */
 .course-tags {
     display: flex;
     flex-wrap: wrap;
@@ -230,7 +235,7 @@ p {
     color: #252525;
 }
 
-/* EMAIL FAB BUTTON STYLING */
+/* EMAIL FLOATING ACTION BUTTON (FAB) */
 
 .email-fab {
     position: fixed;
@@ -246,7 +251,7 @@ p {
     justify-content: center;
     font-size: 25px;
     text-decoration: none;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
@@ -256,38 +261,38 @@ p {
     color: white;
 }
 
-/* STYLING FOR HOME PAGE */
+/* HOME PAGE STYLING - UCC INTRO WITH PHOTO */
 
-/* 2-Column Split Layout (.photostyle) */
+/* 2 COLUMN SPLIT LAYOUT (PHOTO + TEXT) */
 .photostyle {
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
     max-width: 1700px;
-    width:95%;
+    width: 95%;
     margin: 0 auto 40px auto;
     background: #ffffff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
 }
 
 .photo-col {
-    flex: 1 1 300px;
+    flex: 1 1 280px;
+    min-width: 0;
+    box-sizing: border-box;
     min-height: clamp(250px, 40vw, 350px);
 }
 
-.photo-col img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
 .text-col {
-    flex: 1 1 300px;
+    flex: 1 1 280px;
+    min-width: 0;
+    box-sizing: border-box;
     padding: clamp(20px, 5vw, 40px);
+    overflow-wrap: break-word;
 }
 
 .text-col .label {
-    font-size: 11px;
+    font-size: 9px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #656565;
@@ -311,7 +316,10 @@ p {
     margin-bottom: 15px;
     padding: 0;
 }
+
+
 /* HOME PAGE BANNER: LOGO ON THE LEFT, TEXT ON THE RIGHT */
+
 .hero {
     display: flex;
     flex-wrap: wrap;
@@ -334,11 +342,6 @@ p {
     background: #1b17ff;
 }
 
-body {
-    overflow-x: hidden;
-    margin: 0;
-}
-
 .hero-logo {
     width: clamp(180px, 28vw, 300px);
     max-width: 400px;
@@ -358,7 +361,7 @@ body {
     height: auto;
     display: block;
     margin: 0 0 16px 0;
-    mix-blend-mode: screen; /* Instantly turns the dark background transparent */
+    mix-blend-mode: screen; 
 }
 
 .hero-text h2 {
@@ -410,8 +413,10 @@ body {
     }
 }
 
-/* TURNS BUTTON INTO A CIRCLE WITH MY LOGO IN THE CENTER, AND HIDES THE DEFAULT IMAGE OR SVG THAT COMES WITH THE PACKAGE */
-.pwa-install-btn, 
+/* EXPERIMENTATION WITH PWA INSTALL BUTTON
+   TURNS BUTTON INTO A CIRCLE WITH MY LOGO IN THE CENTER*/
+
+.pwa-install-btn,
 #pwa-install-button,
 #laravel-pwa-install,
 .laravel-pwa-install-wrapper {
@@ -427,15 +432,14 @@ body {
     background-position: center !important;
     border: 2px solid #ffffff !important;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
-    text-indent: -9999px !important; /* Hides any default text */
+    text-indent: -9999px !important; /* HIDES ANY DEFAULT TEXT */
     overflow: hidden !important;
     cursor: pointer !important;
     z-index: 9999 !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
-/* HIDES THE DEFAULT IMAGE OR SVG THAT COMES WITH THE PACKAGE, SO ONLY YOUR LOGO SHOWS */
-.pwa-install-btn img, 
+.pwa-install-btn img,
 #pwa-install-button img,
 #laravel-pwa-install img,
 .pwa-install-btn svg,
@@ -444,14 +448,15 @@ body {
     display: none !important;
 }
 
-.pwa-install-btn:hover, 
+.pwa-install-btn:hover,
 #pwa-install-button:hover,
 #laravel-pwa-install:hover {
     transform: translateY(-4px) scale(1.05) !important;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35) !important;
 }
 
-/* SOCIAL MEDIA PAGE STYLING */
+
+/* SOCIAL MEDIA PAGE STYLIING */
 
 .social-page {
     max-width: 1100px;
@@ -469,9 +474,7 @@ body {
     margin-bottom: 10px;
 }
 
-
 /* SOCIAL MEDIA BUTTONS */
-
 .social-buttons {
     display: flex;
     justify-content: center;
@@ -506,9 +509,7 @@ body {
     transform: translateY(-3px);
 }
 
-
 /* SOCIAL MEDIA SECTIONS */
-
 .social-feed {
     background-color: #ffffff;
     border: 1px solid #dddddd;
@@ -517,9 +518,6 @@ body {
     margin-bottom: 30px;
     scroll-margin-top: 20px;
 }
-
-
-/* SIGNATURE UCC BLUE HEADINGS */
 
 .social-feed-heading h2 {
     color: #0b5ed7;
@@ -547,9 +545,7 @@ body {
     text-decoration: underline;
 }
 
-
-/* FACEBOOK POSTS */
-
+/* FACEBOOK POSTS FORMATTING */
 .facebook-posts {
     display: flex;
     justify-content: center;
@@ -562,9 +558,7 @@ body {
     max-width: 500px;
 }
 
-
-/* INSTAGRAM POSTS */
-
+/* INSTAGRAM POSTS FORMATTING */
 .instagram-posts {
     display: flex;
     justify-content: center;
@@ -578,17 +572,13 @@ body {
     margin: 0 auto 20px !important;
 }
 
-
-/* X POSTS */
-
+/* X POSTS FORMATTING */
 .x-posts {
     max-width: 600px;
     margin: 0 auto;
 }
 
-
-/* MOBILE RESPONSIVENESS */
-
+/* MOBILE RESPONSIVENESS FOR SOCIAL PAGE */
 @media (max-width: 600px) {
 
     .social-heading h1 {
@@ -614,8 +604,7 @@ body {
 
 }
 
-
-/* STYLING FOR ADMISSIONS PAGE*/
+/* ADMISSIONS PAGE STYLING */
 
 .admissions-page {
     max-width: 1150px;
@@ -623,9 +612,7 @@ body {
     padding: 30px 20px;
 }
 
-
 /* ADMISSIONS HERO */
-
 .admissions-hero {
     background: linear-gradient(135deg, #0b5ed7, #0668bd);
     color: white;
@@ -661,9 +648,6 @@ body {
     padding-right: 20px;
     margin-bottom: 25px;
 }
-
-
-/* APPLICATION BUTTONS */
 
 .admissions-buttons {
     display: flex;
@@ -701,9 +685,7 @@ body {
     transform: translateY(-2px);
 }
 
-
 /* INTRODUCTION */
-
 .admissions-intro {
     text-align: center;
     max-width: 800px;
@@ -723,9 +705,6 @@ body {
     padding: 0 10px;
 }
 
-
-/* SECTION HEADINGS */
-
 .admission-section,
 .admission-highlights {
     margin-bottom: 45px;
@@ -737,17 +716,24 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 12px;
-    align-items: center;
+}
+
+.center-heading {
+    text-align: center;
 }
 
 .section-description {
     margin-bottom: 20px;
-    font-size: 13px;
-    line-height: 1.7;
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 0;
 }
 
-
-/* CARD GRID */
+.section-description.centered {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 25px;
+}
 
 .admission-card-grid {
     display: grid;
@@ -756,8 +742,10 @@ body {
     margin-top: 20px;
 }
 
-
-/* INDIVIDUAL CARDS */
+.admission-card-grid.single-card {
+    grid-template-columns: minmax(0, 420px);
+    justify-content: center;
+}
 
 .admission-card {
     background-color: white;
@@ -772,23 +760,12 @@ body {
     color: #0b5ed7;
     font-size: 20px;
     margin-bottom: 15px;
-    align-items: center;
 }
 
 .admission-card p {
     line-height: 1.7;
     margin-bottom: 12px;
     font-size: 13px;
-}
-
-.admission-card ul {
-    padding-left: 22px;
-    margin-top: 12px;
-}
-
-.admission-card li {
-    line-height: 1.7;
-    margin-bottom: 10px;
 }
 
 .admission-card a {
@@ -801,8 +778,43 @@ body {
     text-decoration: underline;
 }
 
+.admission-card:not(.highlight-card) h3 {
+    font-weight: bold;
+}
 
-/* HIGHLIGHT CARDS */
+.admission-card:not(.highlight-card) p {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.admission-card ul {
+    list-style: disc;
+    padding-left: 24px;
+    margin-top: 12px;
+}
+
+.admission-card li {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.admission-card.compact-card h3 {
+    margin-bottom: 8px;
+}
+
+.admission-card.compact-card p,
+.admission-card.compact-card li {
+    font-size: 12.5px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.card-divider {
+    border: 0;
+    border-top: 1px solid #dddddd;
+    margin: 22px 0 18px;
+}
 
 .highlight-card {
     text-align: center;
@@ -828,27 +840,40 @@ body {
     margin-bottom: 10px;
 }
 
-
-/* FOUR CSEC NOTE */
-
+/* FOUR CSEC NOTE: SOFT YELLOW TO MATCH THE SITE */
 .admission-note {
-    background-color: #EBEEF2;
+    background-color: #fff8cc;
     border-left: 5px solid #F2CB07;
     box-shadow: none;
-    font-size: 13px;
 }
 
-
-/* CHECKLIST */
-
-.application-checklist li {
-    padding-left: 5px;
-    font-size: 10px;
+/* APPLICATION CHECKLIST WITH EMPTY SQUARE BOXES */
+.admission-card ul.application-checklist {
+    list-style: none;
+    padding-left: 0;
 }
 
+.admission-card .application-checklist li {
+    position: relative;
+    padding-left: 36px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.admission-card .application-checklist li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #0b5ed7;
+    border-radius: 4px;
+    background: #ffffff;
+}
 
 /* RESOURCE CARDS */
-
 .resource-card {
     margin-bottom: 0;
 }
@@ -858,28 +883,7 @@ body {
     margin-top: 12px;
 }
 
-
-/* FINAL APPLICATION SECTION */
-
-.admissions-cta {
-    background-color: #EBEEF2;
-    border-radius: 15px;
-    padding: 40px 25px;
-    text-align: center;
-    margin: 45px 0 25px;
-}
-
-.admissions-cta h2 {
-    color: #0b5ed7;
-    font-size: 30px;
-    margin-bottom: 12px;
-}
-
-.admissions-cta p {
-    margin-bottom: 25px;
-    line-height: 1.7;
-}
-
+/* DISCLAIMER AT THE BOTTOM */
 .admissions-disclaimer {
     font-size: 13px;
     color: #666666;
@@ -888,9 +892,7 @@ body {
     margin: 25px 0;
 }
 
-
-/* MEDIATAGS */
-
+/* MOBILE AND TABLET RESPONSIVENESS FOR ADMISSIONS PAGE */
 @media (max-width: 900px) {
 
     .admission-card-grid {
@@ -936,20 +938,20 @@ body {
 
 }
 
+/* LAYOUT PAGE - NAVIGATION BAR */
 
-/* NAVIGATION BAR STYLING*/
 .ucc-navbar {
     position: relative;
     width: 100%;
     z-index: 1000;
 }
 
-/* Hide the hamburger button on desktop */
+/* HIDE THE HAMBURGER BUTTON ON DESKTOP */
 .mobile-nav {
     display: none;
 }
 
-/* Hide the mobile dropdown by default */
+/* HIDE THE MOBILE DROPDOWN BY DEFAULT */
 .mobile-menu {
     display: none;
 }
@@ -957,17 +959,17 @@ body {
 /* TABLET AND MOBILE */
 @media (max-width: 1050px) {
 
-    /* Hide the desktop navigation buttons */
+    /* HIDE THE DESKTOP NAVIGATION BUTTONS */
     .desktop-nav {
         display: none;
     }
 
-    /* Show the hamburger button */
+    /* SHOW THE HAMBURGER BUTTON */
     .mobile-nav {
         display: flex;
     }
 
-    /* Vertical dropdown menu */
+    /* VERTICAL DROPDOWN MENU */
     .mobile-menu {
         display: none;
         position: absolute;
@@ -984,12 +986,12 @@ body {
         gap: 5px;
     }
 
-    /* Show menu when hamburger is clicked */
+    /* SHOW MENU WHEN HAMBURGER IS CLICKED */
     .mobile-menu.show {
         display: flex;
     }
 
-    /* Keep the original DaisyUI ghost button styling */
+    /* KEEP THE ORIGINAL DAISYUI GHOST BUTTON STYLING */
     .mobile-menu a.btn {
         width: 100%;
         height: auto;
