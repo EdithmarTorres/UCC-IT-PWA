@@ -6,4 +6,4 @@ RECEIVED ANY UNAUTHORIZED ASSISTANCE ON THIS ASSIGNMENT
   Dated: November 7, 2026
   ITT307 Internet Authoring II Course Major Project
 
-Link to site on Laravel Cloud: 
+Link to site on Laravel Cloud: https://ucc-pwa-etscoursemajorproject.laravel.cloud/

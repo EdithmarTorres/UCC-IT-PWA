@@ -21,7 +21,7 @@
                     Commonwealth Caribbean.
                 </p>
                 <div class="admissions-buttons">
-                    <a href="https://www.uccglobal.co/apply/"
+                    <a href="https://www.ucc.edu.jm/apply/undergraduate/preform"
                        target="_blank" rel="noopener noreferrer"
                        class="admission-btn primary-btn">Apply Now</a>
 
