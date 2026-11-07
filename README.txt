@@ -7,3 +7,4 @@ RECEIVED ANY UNAUTHORIZED ASSISTANCE ON THIS ASSIGNMENT
   ITT307 Internet Authoring II Course Major Project
 
 Link to site on Laravel Cloud: https://ucc-pwa-etscoursemajorproject.laravel.cloud/
+Link to GitHub Repository:  
