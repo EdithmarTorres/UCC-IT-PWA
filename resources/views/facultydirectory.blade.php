@@ -14,12 +14,12 @@
 
                 <h2>{{ $member->name }}</h2>
                 <p class="staff-title">{{ $member->title }}</p>
-                <p> Email: {{ $member->phone }}</p>
-                <p> Phone: {{ $member->email }}</p>
+                <p> Phone: {{ $member->phone }}</p>
+                <p> Email: {{ $member->email }}</p>
                 
                 <div class="staff-buttons">
                     <a href="tel:{{ preg_replace('/[^0-9+]/', '', $member->phone) }}">📞 Call</a>
-                    <a href="mailto:{{ $member->email }}">✉️ Email</a>
+                    <a href="mailto:{{ $member->email }}?subject={{ rawurlencode('UCC IT Department Enquiry') }}">✉️ Email</a>
                 </div>
 
             </div>
