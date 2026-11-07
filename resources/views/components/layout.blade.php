@@ -106,7 +106,7 @@
         aria-label="Email the Head of Department"
         title="Email the Head of Department">
 
-        ✉
+        ✉️
 
     </a>
 
